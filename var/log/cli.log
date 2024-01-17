@@ -1,0 +1,200 @@
+2023-11-22T18:53:21+00:00 => 22-11-23 06:53:21: Command "c:finstall" is not defined.
+
+Did you mean one of these?
+    account
+    cache:block
+    cache:flush
+    cache:list
+    check-status
+    clear-log
+    completion
+    rm-unconfirmeduser
+    sync-failedshipment
+    sync:product-metafield
+    sync:shopify-target-order
+#0 /app/home/vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find('c:finstall')
+#1 /app/home/vendor/symfony/console/Application.php(171): Symfony\Component\Console\Application->doRun(Symfony\Component\Console\Input\ArgvInput, Symfony\Component\Console\Output\ConsoleOutput)
+#2 /app/home/app/code/core/ConsoleApplication.php(157): Symfony\Component\Console\Application->run()
+#3 /app/home/app/cli(89): App\Core\ConsoleApplication->handle(Array)
+#4 /app/home/app/cli(144): {closure}(false)
+
+
+2023-11-22T18:56:21+00:00 => 22-11-23 06:56:21: Command "c:finstall" is not defined.
+
+Did you mean one of these?
+    account
+    cache:block
+    cache:flush
+    cache:list
+    check-status
+    clear-log
+    completion
+    rm-unconfirmeduser
+    sync-failedshipment
+    sync:product-metafield
+    sync:shopify-target-order
+#0 /app/home/vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find('c:finstall')
+#1 /app/home/vendor/symfony/console/Application.php(171): Symfony\Component\Console\Application->doRun(Symfony\Component\Console\Input\ArgvInput, Symfony\Component\Console\Output\ConsoleOutput)
+#2 /app/home/app/code/core/ConsoleApplication.php(157): Symfony\Component\Console\Application->run()
+#3 /app/home/app/cli(89): App\Core\ConsoleApplication->handle(Array)
+#4 /app/home/app/cli(144): {closure}(false)
+
+
+[2024-01-16T13:33:35+00:00][EMERGENCY] 16-01-24 01:33:35: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-16T13:33:38+00:00][EMERGENCY] 16-01-24 01:33:38: Class "App\Apiconnect\Api\Base" not found
+#0 [internal function]: Phalcon\Autoload\Loader->requireFile('/app/home/app/c...')
+#1 [internal function]: Phalcon\Autoload\Loader->autoloadCheckDirectories(Array, 'Base')
+#2 [internal function]: Phalcon\Autoload\Loader->autoloadCheckNamespaces('App\\Shopifyhome...')
+#3 /app/home/app/code/shopifyhome/Api/Product.php(10): Phalcon\Autoload\Loader->autoload('App\\Shopifyhome...')
+#4 [internal function]: Phalcon\Autoload\Loader->requireFile('/app/home/app/c...')
+#5 [internal function]: Phalcon\Autoload\Loader->autoloadCheckDirectories(Array, 'Product')
+#6 [internal function]: Phalcon\Autoload\Loader->autoloadCheckNamespaces('App\\Shopifyhome...')
+#7 [internal function]: Phalcon\Autoload\Loader->autoload('App\\Shopifyhome...')
+#8 /app/home/app/code/core/Components/Routing/RouteParser.php(46): ReflectionClass->__construct('App\\Shopifyhome...')
+#9 /app/home/app/code/core/Components/Routing/RouteParser.php(37): App\Core\Components\Routing\RouteParser->parseRoute('App\\Shopifyhome...')
+#10 /app/home/generation/App/Core/Components/Routing/RouteParser/Wrapper.php(16): App\Core\Components\Routing\RouteParser->loadApis(Object(App\Core\Components\Helper\Wrapper))
+#11 /app/home/app/code/core/Components/Setup.php(506): App\Core\Components\Routing\RouteParser\Wrapper->loadApis()
+#12 /app/home/generation/App/Core/Components/Setup/Wrapper.php(35): App\Core\Components\Setup->addRoutes(Object(MongoDB\Collection), '2823f4797102ce1...', Array, Array, Object(App\Core\Components\Routing\RouteParser\Wrapper))
+#13 /app/home/app/code/core/Components/Setup.php(251): App\Core\Components\Setup\Wrapper->addRoutes(Object(MongoDB\Collection), '2823f4797102ce1...', Array, Array)
+#14 /app/home/app/code/core/Components/Setup.php(46): App\Core\Components\Setup->updateResourcesAction()
+#15 /app/home/generation/App/Core/Components/Setup/Wrapper.php(20): App\Core\Components\Setup->upgradeAction(true, Object(App\Core\Components\Routing\RouteParser\Wrapper))
+#16 /app/home/app/code/core/console/SetupUpgradeCommand.php(53): App\Core\Components\Setup\Wrapper->upgradeAction(true)
+#17 /app/home/vendor/symfony/console/Command/Command.php(326): SetupUpgradeCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#22 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#23 /app/home/app/cli(118): {closure}(false)
+#24 {main}
+
+[2024-01-17T05:47:09+00:00][EMERGENCY] 17-01-24 05:47:09: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-17T05:47:24+00:00][EMERGENCY] 17-01-24 05:47:24: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-17T05:47:25+00:00][EMERGENCY] 17-01-24 05:47:25: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-17T05:47:30+00:00][EMERGENCY] 17-01-24 05:47:30: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-17T05:47:37+00:00][EMERGENCY] 17-01-24 05:47:37: Command "c:c" is not defined.
+
+Did you mean one of these?
+    app:check-status
+    cache:block
+    cache:flush
+    cache:list
+    completion
+    dev:account
+    log:clear
+    phpunit:coverage
+    phpunit:generate-config
+    remove:store-closed_users
+    setup:build-acl
+    setup:clear-notifications
+    setup:update-resources
+    sync-backup-data
+    sync:product-metafield
+    sync:shopify-target-order
+    token:clean-expired
+    user:create
+    user:rm-unconfirmed
+#0 /app/home/vendor/symfony/console/Application.php(266): Symfony\Component\Console\Application->find('c:c')
+#1 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#3 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#4 /app/home/app/cli(118): {closure}(false)
+#5 {main}
+
+[2024-01-17T05:52:51+00:00][EMERGENCY] 17-01-24 05:52:51: No arguments expected for "setup:upgrade" command, got "install".
+#0 /app/home/vendor/symfony/console/Input/ArgvInput.php(89): Symfony\Component\Console\Input\ArgvInput->parseArgument('install')
+#1 /app/home/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\Component\Console\Input\ArgvInput->parseToken('install', true)
+#2 /app/home/vendor/symfony/console/Input/Input.php(56): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /app/home/vendor/symfony/console/Command/Command.php(285): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#8 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#9 /app/home/app/cli(118): {closure}(false)
+#10 {main}
+
+[2024-01-17T05:52:57+00:00][EMERGENCY] 17-01-24 05:52:57: Class "App\Apiconnect\Api\Base" not found
+#0 [internal function]: Phalcon\Autoload\Loader->requireFile('/app/home/app/c...')
+#1 [internal function]: Phalcon\Autoload\Loader->autoloadCheckDirectories(Array, 'Base')
+#2 [internal function]: Phalcon\Autoload\Loader->autoloadCheckNamespaces('App\\Shopifyhome...')
+#3 /app/home/app/code/shopifyhome/Api/Product.php(10): Phalcon\Autoload\Loader->autoload('App\\Shopifyhome...')
+#4 [internal function]: Phalcon\Autoload\Loader->requireFile('/app/home/app/c...')
+#5 [internal function]: Phalcon\Autoload\Loader->autoloadCheckDirectories(Array, 'Product')
+#6 [internal function]: Phalcon\Autoload\Loader->autoloadCheckNamespaces('App\\Shopifyhome...')
+#7 [internal function]: Phalcon\Autoload\Loader->autoload('App\\Shopifyhome...')
+#8 /app/home/app/code/core/Components/Routing/RouteParser.php(46): ReflectionClass->__construct('App\\Shopifyhome...')
+#9 /app/home/app/code/core/Components/Routing/RouteParser.php(37): App\Core\Components\Routing\RouteParser->parseRoute('App\\Shopifyhome...')
+#10 /app/home/generation/App/Core/Components/Routing/RouteParser/Wrapper.php(16): App\Core\Components\Routing\RouteParser->loadApis(Object(App\Core\Components\Helper\Wrapper))
+#11 /app/home/app/code/core/Components/Setup.php(42): App\Core\Components\Routing\RouteParser\Wrapper->loadApis()
+#12 /app/home/generation/App/Core/Components/Setup/Wrapper.php(20): App\Core\Components\Setup->upgradeAction(true, Object(App\Core\Components\Routing\RouteParser\Wrapper))
+#13 /app/home/app/code/core/console/SetupUpgradeCommand.php(53): App\Core\Components\Setup\Wrapper->upgradeAction(true)
+#14 /app/home/vendor/symfony/console/Command/Command.php(326): SetupUpgradeCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /app/home/vendor/symfony/console/Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /app/home/vendor/symfony/console/Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(SetupUpgradeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /app/home/vendor/symfony/console/Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /app/home/app/code/core/ConsoleApplication.php(120): Symfony\Component\Console\Application->run()
+#19 /app/home/app/cli(82): App\Core\ConsoleApplication->handle()
+#20 /app/home/app/cli(118): {closure}(false)
+#21 {main}
+
